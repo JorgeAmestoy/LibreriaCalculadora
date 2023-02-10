@@ -29,3 +29,5 @@ El usuario deberá escribir dos número y el programa dará el resultado de la d
 
 En caso de que el resultado sea infinito, por ejemplo si divido un número entre cero, aparecerá el mensaje: **Error: No se puede dividir entre cero. Prueba otra vez.** 
 Dicho resultado es permitido gracias al método *isInfinite()* o *isNan()*, los cuales son propios de la clase Java y devuelven un true si la variable es infinita o no válida, y un false, en caso contrario.
+
+[JavaDoc](file:///C:/Users/javie/IdeaProjects/TareaLibreriaJorge/docs/index.html)
