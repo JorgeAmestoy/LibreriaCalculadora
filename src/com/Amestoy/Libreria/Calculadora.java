@@ -19,15 +19,14 @@ public class Calculadora {
     static final int DIVISION = 4;
 
     /**
-     *
      * @param device --> Eleccion de la operacion numerica usando las constantes
-     * @param numA --> Primer numero
-     * @param numB --> Segundo numero
+     * @param numA   --> Primer numero
+     * @param numB   --> Segundo numero
      * @return resultado
      */
 
 
-    public static Float operacion(int device, float numA, float numB) {
+    public static Float operacion(int device, Float numA, Float numB) {
 
         switch (device) {
 
@@ -37,6 +36,7 @@ public class Calculadora {
                 } catch (Exception e) {
                     System.out.println("No es valido");
                 }
+
                 break;
 
             case RESTA:
@@ -70,12 +70,6 @@ public class Calculadora {
 
 
     }
-
-
-
-
-
-
 
 
 }

@@ -6,18 +6,18 @@ public class Main {
         int device;
         Float numero1, numero2;
         Float resultado;
-        device = EntradaSalida.entradaEntero("1 --> Sumar \n2 --> Restar \n3 --> Multiplicar \n4 --> Dividir \n5 --> Salir del programa");
+        device = EntradaSalida.entradaEntero("1 --> Sumar \n2 --> Restar \n3 --> Multiplicar \n4 --> Dividir");
         numero1 = EntradaSalida.entradaFloat("Escribe primer numero");
         numero2 = EntradaSalida.entradaFloat("Escribe segundo numero");
         if (numero1 == null || numero2 == null) {
-            EntradaSalida.salida("Error: Escribe un numero", EntradaSalida.SALIDA_CONSOLA);
+            EntradaSalida.salida("Error: Escribe un numero, no una letra", EntradaSalida.SALIDA_CONSOLA);
         } else {
-            if (device > 0 && device < 5) {
+            if (device >= 1 && device <= 4) {
                 resultado = Calculadora.operacion(device, numero1, numero2);
-                if (Float.isNaN(resultado)) {
-                    EntradaSalida.salida("Error", EntradaSalida.SALIDA_CONSOLA);
+                if (Float.isInfinite(resultado)) {
+                    EntradaSalida.salida("Error: No se puede dividir entre cero. Prueba otra vez.", EntradaSalida.SALIDA_CONSOLA);
                 } else {
-                    EntradaSalida.salida(("Resultado: " + resultado), EntradaSalida.SALIDA_WINDOW);
+                    EntradaSalida.salida(("Resultado: " + resultado), EntradaSalida.SALIDA_CONSOLA);
                 }
             }
 
