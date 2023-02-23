@@ -1,4 +1,4 @@
-package com.Amestoy.Libreria;
+package com.amestoy.libcalculadora;
 
 /**
  * TareaLibreriaJorge
@@ -9,23 +9,33 @@ package com.Amestoy.Libreria;
 public class Calculadora {
 
     /**
-     * Declaro las constantes
+     * Creo atributo privado de clase Float resultado = null
      */
-
     private static Float resultado = null;
+    /**
+     * Creo atributo constante de suma con valor 1
+     */
     static final int SUMA = 1;
+    /**
+     * Creo atributo constante de resta con valor 2
+     */
     static final int RESTA = 2;
+    /**
+     * Creo atributo constante de multiplicacion con valor 3
+     */
     static final int MULTIPLICACION = 3;
+    /**
+     * Creo atributo constante de multiplicacion con valor 3
+     */
     static final int DIVISION = 4;
 
     /**
-     * @param device --> Eleccion de la operacion numerica usando las constantes
-     * @param numA   --> Primer numero
-     * @param numB   --> Segundo numero
+     * descripcion
+     * @param device Eleccion de la operacion numerica usando las constantes
+     * @param numA   Primer numero
+     * @param numB   Segundo numero
      * @return resultado
      */
-
-
     public static Float operacion(int device, Float numA, Float numB) {
 
         switch (device) {
