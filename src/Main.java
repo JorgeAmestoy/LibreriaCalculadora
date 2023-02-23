@@ -1,4 +1,4 @@
-import com.amestoy.io.EntradaSalida;
+
 import com.amestoy.libcalculadora.Calculadora;
 
 
@@ -11,7 +11,7 @@ public class Main {
         Float resultado;
 
 
-        device = EntradaSalida.entradaINt("1 --> Sumar \n2 --> Restar \n3 --> Multiplicar \n4 --> Dividir");
+        device = EntradaSalida.entradaInteger("1 --> Sumar \n2 --> Restar \n3 --> Multiplicar \n4 --> Dividir");
         numero1 = EntradaSalida.entradaFloat("Escribe primer numero");
         numero2 = EntradaSalida.entradaFloat("Escribe segundo numero");
         if (numero1 == null || numero2 == null) {
