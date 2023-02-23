@@ -11,7 +11,7 @@ File --> Project Structure --> Libraries --> Apply
 
 ***OPERACIONES***<br>
 ---------------------------
-A través del método switch, se le dará al usuario la opción de elegir entre una de las operaciones, incluyendo un tratamiento de excepciones (try catch) en cada una para posibles errores.
+A través del método Switch, se le dará al usuario la opción de elegir entre una de las operaciones, incluyendo un tratamiento de excepciones (try catch) en cada una para posibles errores.
 
 1. SUMA:
 El usuario deberá escribir dos número y el programa dará el resultado de la suma por consola. El programa termina mostrando el resultado final.
