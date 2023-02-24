@@ -28,8 +28,10 @@ public class Calculadora {
      * Creo atributo constante de multiplicacion con valor 4
      */
     static final int DIVISION = 4;
-
-    static final int RAIZ =5;
+    /**
+     * Creo atributo constante de raiz con valor 5
+     */
+    static final int RAIZ = 5;
 
 
 
