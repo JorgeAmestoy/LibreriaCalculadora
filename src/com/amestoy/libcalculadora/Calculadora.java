@@ -25,9 +25,13 @@ public class Calculadora {
      */
     static final int MULTIPLICACION = 3;
     /**
-     * Creo atributo constante de multiplicacion con valor 3
+     * Creo atributo constante de multiplicacion con valor 4
      */
     static final int DIVISION = 4;
+
+    static final int RAIZ =5;
+
+
 
     /**
      * descripcion
@@ -70,6 +74,16 @@ public class Calculadora {
                     resultado = numA / numB;
                 } catch (Exception e) {
                     System.out.println("No es valido");
+                }
+                break;
+
+            case RAIZ:
+
+                try{
+                    double resultado = (float)Math.pow(numA, (double) 1.0/numB);
+
+                }catch (Exception e){
+                    System.out.println("No es válido");
                 }
                 break;
 
